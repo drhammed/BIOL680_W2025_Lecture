@@ -1,0 +1,10 @@
+name: biol680_w2025_lecture
+title:
+username: hammed
+account: hammed
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14190944
+bundleId: 9911247
+url: https://hammed.shinyapps.io/biol680_w2025_lecture/
+version: 1

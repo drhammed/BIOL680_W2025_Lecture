@@ -1,0 +1,10 @@
+name: iteration_app
+title:
+username: hammed
+account: hammed
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14191724
+bundleId: 9911817
+url: https://hammed.shinyapps.io/iteration_app/
+version: 1
