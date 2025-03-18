@@ -94,8 +94,11 @@ graph
 
 Can we make sense of data without a target variable? 
 
+--
 
-- Yes, at least to some extent. Although our focus would shift to finding the underlying structure of the input data instead of function between input and output like in supervised learning.
+- **Yes**, at least to some extent. Although our focus would shift to finding the underlying structure of the input data instead of function between input and output like in supervised learning.
+
+--
 
 - Examples include:
   -  Clustering (e.g., K-Means)
