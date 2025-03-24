@@ -844,7 +844,7 @@ ggplot(df_in, aes(x = X1, y = X2)) +
 
 #Inertia
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+```{r echo=TRUE, warning=FALSE, message=FALSE}
 
 # Function to calculate inertia for different values of K
 calculate_inertia <- function(X_in, max_k) {
@@ -857,22 +857,6 @@ calculate_inertia <- function(X_in, max_k) {
   return(df_int)
 }
 
-
-# Function to plot the elbow method
-plot_elbow <- function(w, h, inertia_df) {
-  ggplot(inertia_df, aes(x = K, y = Inertia)) +
-    geom_line(color = "blue") +
-    geom_point(size = 2) +
-    geom_vline(xintercept = 3, linetype = "dashed", color = "black") +  # Highlight optimal K
-    labs(
-      title = "Elbow Method for Optimal K",
-      x = "Number of Clusters (K)",
-      y = "Inertia"
-    ) +
-    scale_x_continuous(breaks = 1:max(inertia_df$K)) + # x-axis to whole numbers
-    theme_minimal(base_size = w + h) + 
-    theme(axis.text = element_text(size = w + h))
-}
 
 
 ```
@@ -926,6 +910,22 @@ For example:
 #Inertia
 .pull-left[
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+# Function to plot the elbow method
+plot_elbow <- function(w, h, inertia_df) {
+  ggplot(inertia_df, aes(x = K, y = Inertia)) +
+    geom_line(color = "blue") +
+    geom_point(size = 2) +
+    geom_vline(xintercept = 3, linetype = "dashed", color = "black") +  # Highlight optimal K
+    labs(
+      title = "Elbow Method for Optimal K",
+      x = "Number of Clusters (K)",
+      y = "Inertia"
+    ) +
+    scale_x_continuous(breaks = 1:max(inertia_df$K)) + # x-axis to whole numbers
+    theme_minimal(base_size = w + h) + 
+    theme(axis.text = element_text(size = w + h))
+}
 
 
 # Plot the elbow plot
