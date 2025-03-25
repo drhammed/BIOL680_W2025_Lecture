@@ -1309,6 +1309,10 @@ print(plt_sil_k4)
 
 
 
+---
+#Elbow and Silhouette
+
+![](images/elbow_vs_silh.png)
 
 
 
